@@ -8,18 +8,9 @@ export const heroData: PersonalInfo = {
   profileImage: "/profile.webp", // path to image in public folder
   setupImage: "/setup.webp", // path to setup image
   moreInfo: `
-I'm Eswara Rohan, a passionate Software Engineer based in Hyderabad with hands-on experience in
- full-stack development. I’ve worked with a diverse tech stack including React, Angular,
-  and Spring Boot—delivering clean, scalable, and efficient solutions.
-   During my time at Kshema General Insurance, I gained valuable exposure to real-time dashboards and 
-   web applications, which helped strengthen both my frontend and backend skills.
-    I'm especially confident in crafting seamless user experiences and building performant APIs.
+I'm Eswara Rohan, a Software Engineer based in Hyderabad with hands-on experience in full-stack development using React, Angular, and Spring Boot. At Kshema General Insurance, I worked on real-time dashboards and web apps, sharpening my frontend and backend skills.
 
-I graduated from IIIT Hyderabad in 2024, and I’m currently working at Chubb, 
-where I contribute to building robust, high-quality software solutions.
- I’m always eager to explore new tools and 
-frameworks, improve system designs, and collaborate with like-minded people. 
- It’s been an incredible journey of growth and self-discovery!
+A 2024 graduate from IIIT Hyderabad, I now work at Chubb, where I help build robust, high-quality software. I'm passionate about crafting seamless user experiences, building performant APIs, and exploring new tools and system designs.
 
   `.trim(),
   email:"rohan.iiith@gmail.com",
