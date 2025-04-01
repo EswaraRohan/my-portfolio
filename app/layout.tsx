@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const revalidate = Number(process.env.REVALIDATE_INTERVAL) || 600;
+export const revalidate = 600;
 
 export default function RootLayout({
   children,
