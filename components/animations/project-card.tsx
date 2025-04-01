@@ -14,7 +14,7 @@ export function ProjectCard({ data }: Props) {
   return (
     <PinContainer
       title="View Project"
-      className="!w-full flex justify-center h-[360px]"
+      className="!w-full flex justify-center h-[330px]"
     >
       <div className="tracking-tight text-blue-100">
         <Image

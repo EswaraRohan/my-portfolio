@@ -27,9 +27,9 @@ export const data: {
         endDate: "2025-01",
         jobDescription: `
         • Built the iAgri portal using Angular, allowing users to apply for insurance and manage accounts within the Scrum framework
-• Developed a React-based kiosk application in one month using the RAD model.
+        • Developed a React-based kiosk application in one month using the RAD model.
 • Led the development of Kshema Finder, a React & Reactstrap web application offering state-wise policy analytics.
-• Automated website performance monitoring with New Relic.
+
         `,
       },
       {

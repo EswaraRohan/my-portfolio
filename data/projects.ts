@@ -36,7 +36,7 @@ export const projects: Project[] = [
   {
     title: "Graph Neural Networks",
     description: "Convolutional Networks, GraphSAGE, expressive power, graph structures, structural representation, GNN variants, strengths, limitations, graph tasks.",
-    gitUrl: "https://github.com/yourusername/otp-auth",
+    gitUrl: "https://github.com/EswaraRohan/How-Powerful-Are-Graph-Neural-Networks",
     images: ["/ai.jpeg"],
     techStack: ["React", "Express", "MongoDB", "Node.js"],
     priority: 5,
