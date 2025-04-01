@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   robots:
     "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
   icons: {
-    icon: "/faviconnew.png",
+    icon: "/favicon.webp",
     apple: "/apple-touch-icon.png",
   },
 };
