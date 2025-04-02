@@ -10,7 +10,7 @@ export const data: {
     workExperience: [
       {
         companyName: "All India Institute Of Speech and Hearing",
-        companyLogo: "/experience.webp",
+        companyLogo: "/aiishlogo.png",
         position: "Full Stack Developer Intern",
         startDate: "2023-01",
         endDate: "2023-06",
@@ -21,7 +21,7 @@ export const data: {
       },
       {
         companyName: "Kshema General Insurance Limited",
-        companyLogo: "/experience.webp",
+        companyLogo: "/kshemalogo.jpg",
         position: "Associate Member Of Technical Staff",
         startDate: "2024-07",
         endDate: "2025-01",
@@ -34,7 +34,7 @@ export const data: {
       },
       {
         companyName: "Chubb",
-        companyLogo: "/experience.webp",
+        companyLogo: "/chubbicon3.jpg",
         position: "Software Engineer",
         startDate: "2025-03",
         jobDescription: ``,
