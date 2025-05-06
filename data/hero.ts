@@ -15,7 +15,7 @@ A 2024 graduate from IIIT Hyderabad, I now work at Chubb, where I help build rob
   `.trim(),
   email:"rohan.iiith@gmail.com",
   workingHours:"9:00 AM - 6:00 PM",
-  address:"B406, Magnum Opus, Gachibowli, Hyderabad, India"
+  address:"Magnum Opus, Gachibowli, Hyderabad, India"
 };
 
 
