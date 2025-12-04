@@ -22,9 +22,11 @@ export function sortByPriority<
 }
 
 export function breakText(text: string | undefined): string[] {
-  if (!text || typeof text !== "string") return [];
+  if (!text) return [];
+  
   return text
-    .split(/\.\s+/)
-    .map((sentence) => sentence.replace(/\.$/, ""))
-    .filter((sentence) => sentence !== "");
+    .split(/\r?\n+/)      // Split on newlines
+    .map((line) => line.trim())
+    .filter((line) => line.length > 0);
 }
+

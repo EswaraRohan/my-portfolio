@@ -20,6 +20,8 @@ export function ContactForm({ className }: { className?: string }) {
   ) => {
     const { id, value } = e.target;
     setFormData((prev) => ({ ...prev, [id]: value }));
+    if (sent) setSent(false); // allow sending again after editing
+    if (error) setError("");
   };
 
   const isFormValid = () => {
@@ -38,13 +40,33 @@ export function ContactForm({ className }: { className?: string }) {
     setLoading(true);
 
     try {
-      // Simulate API request
-      await new Promise((resolve) => setTimeout(resolve, 1500));
-      console.log("Submitted:", formData);
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: "4e1751a6-5732-4665-bd3d-28f965ec0cb4",
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+          from_name: "Portfolio Contact Form",
+        }),
+      });
 
-      setSent(true);
-      setFormData({ name: "", email: "", subject: "", message: "" });
+      const result = await res.json();
+
+      if (result.success) {
+        setSent(true);
+        setFormData({ name: "", email: "", subject: "", message: "" });
+      } else {
+        console.error(result);
+        setError("Failed to send message. Please try again later.");
+      }
     } catch (err) {
+      console.error(err);
       setError("Something went wrong. Please try again.");
     } finally {
       setLoading(false);
@@ -59,7 +81,10 @@ export function ContactForm({ className }: { className?: string }) {
 
       {["name", "email", "subject"].map((field) => (
         <div key={field} className="mb-4">
-          <label htmlFor={field} className="block text-blue-100 mb-1 capitalize">
+          <label
+            htmlFor={field}
+            className="block text-blue-100 mb-1 capitalize"
+          >
             {field}
           </label>
           <input
@@ -72,8 +97,8 @@ export function ContactForm({ className }: { className?: string }) {
               field === "name"
                 ? "John Doe"
                 : field === "email"
-                ? "you@example.com"
-                : "Let’s talk about something cool"
+                  ? "you@example.com"
+                  : "Let’s talk about something cool"
             }
           />
         </div>
@@ -94,9 +119,19 @@ export function ContactForm({ className }: { className?: string }) {
       </div>
 
       {sent ? (
-        <p className="text-center text-sm text-green-500">
-          Your message has been sent successfully!
-        </p>
+        <div className="text-center">
+          <p className="text-sm text-green-500 mb-3">
+            Your message has been sent successfully!
+          </p>
+
+          <button
+            type="button"
+            onClick={() => setSent(false)}
+            className="px-5 py-2 rounded-md border border-slate-700 text-blue-200 hover:bg-blue-900/30 transition"
+          >
+            Send another message
+          </button>
+        </div>
       ) : (
         <button
           type="submit"

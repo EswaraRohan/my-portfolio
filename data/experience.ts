@@ -7,116 +7,115 @@ export const data: {
   skills: Skill[];
   certificates: Certificate[];
 } = {
-    workExperience: [
-      {
-        companyName: "All India Institute Of Speech and Hearing",
-        companyLogo: "/aiishlogo.png",
-        position: "Full Stack Developer Intern",
-        startDate: "2023-01",
-        endDate: "2023-06",
-        jobDescription: `
+  workExperience: [
+    {
+      companyName: "All India Institute Of Speech and Hearing",
+      companyLogo: "/aiishlogo.png",
+      position: "Full Stack Developer Intern",
+      startDate: "2023-01",
+      endDate: "2023-06",
+      jobDescription: `
         • Developed a CRUD-style web application using RAD model, featuring role-based access (Admin, Patient, Examiner) for an ML-powered stuttering detection system.
 • Integrated Flask for server-side routing, RESTful APIs, ReactJS UI, and MongoDB storage, following Agile methodology for continuous improvement and bug resolution.
         `,
-      },
-      {
-        companyName: "Kshema General Insurance Limited",
-        companyLogo: "/kshemalogo.jpg",
-        position: "Associate Member Of Technical Staff",
-        startDate: "2024-07",
-        endDate: "2025-01",
-        jobDescription: `
+    },
+    {
+      companyName: "Kshema General Insurance Limited",
+      companyLogo: "/kshemalogo.jpg",
+      position: "Associate Member Of Technical Staff",
+      startDate: "2024-07",
+      endDate: "2025-01",
+      jobDescription: `
         • Built the iAgri portal using Angular, allowing users to apply for insurance and manage accounts within the Scrum framework
         • Developed a React-based kiosk application in one month using the RAD model.
 • Led the development of Kshema Finder, a React & Reactstrap web application offering state-wise policy analytics.
 
         `,
-      },
-      {
-        companyName: "Chubb",
-        companyLogo: "/chubbicon3.jpg",
-        position: "Software Engineer",
-        startDate: "2025-03",
-        jobDescription: ``,
-      },
-    ],
+    },
+    {
+      companyName: "Chubb",
+      companyLogo: "/chubbicon3.jpg",
+      position: "Software Engineer",
+      startDate: "2025-03",
+      jobDescription: `
+        • Delivered multiple enhancements and feature integrations across EMEA and LATAM SDW platforms, improving platform reliability.
+• Worked on key CAT SOV modules including processing time metrics, secure file ingestion flow, technical review tracking, and results export features.
+• Contributed to the CAT SOV initiative that earned the Global Data Award for high-impact delivery and collaboration.`,
+    },
+  ],
 
-
-  
-
-    skills: [
-      {
-        name: "React",
-        image: "/react.webp",
-        url: "https://reactjs.org/",
-      },
-      {
-        name: "Angular",
-        image: "/angular.webp",
-        url: "https://angular.io/",
-      },
-      {
-        name: "Spring Boot",
-        image: "/springboot.png",
-        url: "https://spring.io/projects/spring-boot",
-      },
-      {
-        name: "Ionic",
-        image: "/ionic.webp",
-        url: "https://ionicframework.com/",
-      },
-      {
-        name: "Node.js",
-        image: "/nodejs.webp",
-        url: "https://nodejs.org/",
-      },
-      {
-        name: "Flask",
-        image: "/flask.png",
-        url: "https://flask.palletsprojects.com/",
-      },
-      {
-        name: "jQuery",
-        image: "/jquery.png",
-        url: "https://jquery.com/",
-      },
-      {
-        name: "Bootstrap",
-        image: "/bootstrap.webp",
-        url: "https://getbootstrap.com/",
-      },
-      {
-        name: "Material UI",
-        image: "/materiaui.webp",
-        url: "https://mui.com/",
-      },
-      {
-        name: "Tailwind CSS",
-        image: "/tailwind.webp",
-        url: "https://tailwindcss.com/",
-      },
-      {
-        name: "SQL",
-        image: "/sql.png",
-        url: "https://www.w3schools.com/sql/",
-      },
-      {
-        name: "MongoDB",
-        image: "/mongodb.png",
-        url: "https://www.mongodb.com/",
-      },
-      {
-        name: "JavaScript",
-        image: "/javascript.webp",
-        url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-      },
-      {
-        name: "TypeScript",
-        image: "/typescript.png",
-        url: "https://www.typescriptlang.org/",
-      },
-    ],
-    
+  skills: [
+    {
+      name: "React",
+      image: "/react.webp",
+      url: "https://reactjs.org/",
+    },
+    {
+      name: "Angular",
+      image: "/angular.webp",
+      url: "https://angular.io/",
+    },
+    {
+      name: "Spring Boot",
+      image: "/springboot.png",
+      url: "https://spring.io/projects/spring-boot",
+    },
+    {
+      name: "Ionic",
+      image: "/ionic.webp",
+      url: "https://ionicframework.com/",
+    },
+    {
+      name: "Node.js",
+      image: "/nodejs.webp",
+      url: "https://nodejs.org/",
+    },
+    {
+      name: "Flask",
+      image: "/flask.png",
+      url: "https://flask.palletsprojects.com/",
+    },
+    {
+      name: "jQuery",
+      image: "/jquery.png",
+      url: "https://jquery.com/",
+    },
+    {
+      name: "Bootstrap",
+      image: "/bootstrap.webp",
+      url: "https://getbootstrap.com/",
+    },
+    {
+      name: "Material UI",
+      image: "/materiaui.webp",
+      url: "https://mui.com/",
+    },
+    {
+      name: "Tailwind CSS",
+      image: "/tailwind.webp",
+      url: "https://tailwindcss.com/",
+    },
+    {
+      name: "SQL",
+      image: "/sql.png",
+      url: "https://www.w3schools.com/sql/",
+    },
+    {
+      name: "MongoDB",
+      image: "/mongodb.png",
+      url: "https://www.mongodb.com/",
+    },
+    {
+      name: "JavaScript",
+      image: "/javascript.webp",
+      url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    },
+    {
+      name: "TypeScript",
+      image: "/typescript.png",
+      url: "https://www.typescriptlang.org/",
+    },
+  ],
 
   certificates: [
     {
