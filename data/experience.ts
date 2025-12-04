@@ -38,7 +38,7 @@ export const data: {
       position: "Software Engineer",
       startDate: "2025-03",
       jobDescription: `
-        • Delivered multiple enhancements and feature integrations across EMEA and LATAM SDW platforms, improving platform reliability.
+        • Delivered multiple enhancements and feature integrations across EMEA and LATAM SDW platforms.
 • Worked on key CAT SOV modules including processing time metrics, secure file ingestion flow, technical review tracking, and results export features.
 • Contributed to the CAT SOV initiative that earned the Global Data Award for high-impact delivery and collaboration.`,
     },
