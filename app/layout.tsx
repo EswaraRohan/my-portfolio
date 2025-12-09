@@ -9,6 +9,8 @@ import { Analytics } from "@vercel/analytics/react"
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://eswararohan.in/"),  // <-- Replace with your real domain
+
   openGraph: {
     type: "website",
     locale: "en_US",
